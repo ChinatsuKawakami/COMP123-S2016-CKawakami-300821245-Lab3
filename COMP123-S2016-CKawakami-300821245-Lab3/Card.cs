@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace COMP123_S2016_CKawakami_300821245_Lab3
 {
+
+    /**
+     * <summary>
+     * This class creates an object that represents a playing card
+     * </summary>
+     * @class Card
+     */
     class Card
     {
         //Public property*********************************************************
