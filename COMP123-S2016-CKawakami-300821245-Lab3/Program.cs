@@ -9,12 +9,12 @@ using System.Threading.Tasks;
  * Student ID : 300821245
  * Date : 9th June 2016
  * Modified Date : 9th June 2016
- * version 0.0.5 - created Deck which is a List of Card type
+ * version 0.0.6 - added deal method to remove the first card in the deck and check deck does not empty
  *
  */
 namespace COMP123_S2016_CKawakami_300821245_Lab3
 {
-   public class Program
+   class Program
     {
          /**
          * The main method for our driver class program
@@ -32,9 +32,14 @@ namespace COMP123_S2016_CKawakami_300821245_Lab3
 
         deck.Shuffle();//shuffle the deck
         deck.Display();//dispay the deck of shuffled
+        Console.WriteLine();
 
-          
-            
+        Card cardDealt = deck.Deal();
+
+        Console.WriteLine("Card Delt: {0} of {1}", cardDealt.Face, cardDealt.Suit);
+
+        Console.WriteLine();
+         deck.Display();
   
         }//close Main
 

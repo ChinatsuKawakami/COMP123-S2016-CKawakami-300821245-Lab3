@@ -18,7 +18,7 @@ namespace COMP123_S2016_CKawakami_300821245_Lab3
      * </summary>
      * @class Deck
      */
-    public class Deck:List<Card> //Deck is subclass
+    public class Deck: List<Card> //Deck is subclass
     {
         //CONSTRUCTORS********************************************************************
         /**
@@ -70,9 +70,11 @@ namespace COMP123_S2016_CKawakami_300821245_Lab3
 
               for(int face =1 ; face<14; face++)
               {
-                 
+                 //Card newCard = new Card(face,suit);
+                 //this.Add(newCard)
+
                   //because this class is a List pf Card type
-                 this.Add(new Card(face, suit));
+                 this.Add(new Card(face, suit));//annonymous Card object to the List
               }// end for face 
           }// close loop for suit
 
@@ -126,6 +128,27 @@ namespace COMP123_S2016_CKawakami_300821245_Lab3
                 this[currentCard] = this[randomCard];//copy value from randomCard to currentCard
                 this[randomCard] = tempCard; // copy current Card to random card
             }// end - for loop
+        }
+
+        /**
+         * <summary>
+         * This method will remove the 0th item from the deck and return it to the caller
+         * </summary>
+         * @method Deal
+         * @returns {Card}
+         */
+        public Card Deal()
+        {
+            Card returnedCard = this[0];//copy the 0th card in the stack to the returnedCard
+            
+            // check to see it the deck is not empty
+            if(this.Count > 0)
+            {
+              this.RemoveAt(0);// remove the 0th from deck
+            }
+            
+            return returnedCard;
+
         }
     }
 }

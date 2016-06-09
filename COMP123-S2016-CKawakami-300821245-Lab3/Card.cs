@@ -13,7 +13,7 @@ namespace COMP123_S2016_CKawakami_300821245_Lab3
      * </summary>
      * @class Card
      */
-    class Card
+    public class Card
     {
         //Public property*********************************************************
 
