@@ -8,6 +8,25 @@ namespace COMP123_S2016_CKawakami_300821245_Lab3
 {
     class Card
     {
+        //Public property*********************************************************
 
+        public int Face { get; set; }
+        public string Suit { get; set;}
+        
+        /**
+         * <summary>
+         * This construcctor takes Card parameters : fase and suit to instance
+         * </summary>
+         * 
+         * @constructor Card
+         * @param {int} face
+         * @param {string} suit
+         */
+        //Constructor**************************************************************
+        public Card(int face, string suit)
+        {
+            this.Face = face;
+            this.Suit = suit;
+        }
     }
 }

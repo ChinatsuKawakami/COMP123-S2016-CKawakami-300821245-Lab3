@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  * Student ID : 300821245
  * Date : 9th June 2016
  * Modified Date : 9th June 2016
- * version 0.0.1 - Added Deck and Card class
+ * version 0.0.2 - Added public property and constructor into Card class
  *
  */
 namespace COMP123_S2016_CKawakami_300821245_Lab3
